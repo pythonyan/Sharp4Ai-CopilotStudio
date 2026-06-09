@@ -1,0 +1,9 @@
+using Sharp4AI.Demo.Api.DTO;
+
+namespace Sharp4AI.Demo.Api.Interfaces;
+
+public interface ICrmProxyService
+{
+    Task<CrmDataResponse?> GetCrmDataAsync(string emailUtente);
+    Task<CrmDataResponse?> GetCrmTicketsByKeywordsAsync(string keywords);
+}
